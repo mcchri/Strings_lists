@@ -1,0 +1,51 @@
+
+#q20
+a = input("Please enter your first name ")
+b = input("Please enter your surname ")
+len_of_str = len(a)
+print(len_of_str)
+
+#q21
+full_name = a + " " + b
+len_of_str2 = len(full_name) - 1
+print(full_name,len_of_str2)
+
+#q22
+a_cap = a.upper()
+b_cap = b.upper()
+print(a_cap,b_cap)
+
+#q23
+nursery = input("Please enter a nursery rhyme ")
+len_of_nursery = len(nursery)
+print(len_of_nursery)
+
+start = input("enter a staring number ")
+start = int(start)
+end = input("enter a ending number ")
+end = int(end)
+nurse = nursery[start:end]
+print(nurse)
+
+#q24
+word = input("Enter a word")
+word = word.upper()
+input(word)
+
+#q25
+num1=0
+for i in a:
+    num1 = num1 + 1
+if num1 <5:
+    ab_cap = a_cap + b_cap
+    print(ab_cap)
+elif  num1 > 4:
+    print(a)
+
+#q26
+word_pig = input("Enter word for pig")
+fi = word_pig[0]
+vowels = ["a","o","i","e","u"]
+if fi in vowels:
+    word_pig[0] = ""
+    
