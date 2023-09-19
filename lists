@@ -1,1 +1,77 @@
+#q71
+sport = ["baseball","football"]
+new_sport = input("Please enter a new sport ")
+sport.append(new_sport)
+sport.sort()
+print(sport)
+
+#q72
+subjects = ["math","english","irish","history","geography","art"]
+print(subjects, " Which subject do you dont like ")
+dele = input("Input here: ")
+if dele in subjects:
+    subjects.remove(dele)
+    print(subjects)
+elif dele not in subjects:
+    print("Please input the correct word")
+    
+#q74
+colours = ["blue","orange","pink","white","black","red","grey","green","purple","yellow"]
+start = int(input("enter a number between 0 and 4 "))
+end = int(input("enter a number between 5 and 9 "))
+print(colours[start:end])
+
+#q75
+num1 = [234,126,678]
+in_num = input("enter a three digit number: ")
+in_num = int(in_num)
+if in_num in num1:
+    print(num1.index(in_num))
+elif in_num not in num1:
+    print("That is not in the list")
+    
+#q76
+count = 0
+invite = []
+for i in range(3):
+    aux = input("Enter a name: ")
+    invite.append(aux)
+count = 3
+ques = "no"
+ques = input("do you want to invite more people? ")
+while ques == "yes":
+    aux = input("Enter a name: ")
+    invite.append(aux)
+    ques = input("do you want to invite more people? ")
+    count += 1
+print(count)
+
+#q77
+name = input("type in one of the names: ")
+if name in invite:
+    print(invite.index(name))
+ques = input("do you want to invite that person? ")
+if ques == "no":
+    invite.remove(name)
+print(invite)
+
+#q78
+tv = ["simp","family","cart","spidy"]
+len_tv = len(tv)
+for i in range(len(tv)):
+    print(i)
+show = input("Enter another show: ")
+pos = int(input("Enter the position: "))
+tv[pos] = show
+print(tv)
+
+#79
+nums = []
+for i in range(3):
+    num = input("Enter a number: ")
+    nums.append(num)
+ques2 = input("do you still want the last number: ")
+if ques2 == "no":
+    nums.remove(num)
+print(nums)    
 
