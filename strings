@@ -1,4 +1,3 @@
-
 #q20
 a = input("Please enter your first name ")
 b = input("Please enter your surname ")
@@ -20,7 +19,7 @@ nursery = input("Please enter a nursery rhyme ")
 len_of_nursery = len(nursery)
 print(len_of_nursery)
 
-start = input("enter a staring number ")
+start = input("enter a starting number ")
 start = int(start)
 end = input("enter a ending number ")
 end = int(end)
@@ -28,7 +27,7 @@ nurse = nursery[start:end]
 print(nurse)
 
 #q24
-word = input("Enter a word")
+word = input("Enter a word ")
 word = word.upper()
 input(word)
 
@@ -43,9 +42,14 @@ elif  num1 > 4:
     print(a)
 
 #q26
-word_pig = input("Enter word for pig")
+word_pig = input("Enter word for pig ")
+len_of_pig = len(word_pig)
 fi = word_pig[0]
 vowels = ["a","o","i","e","u"]
-if fi in vowels:
-    word_pig[0] = ""
+if fi not in vowels:
+    word_pig = word_pig.replace(word_pig[0], "")
+    word_pig = word_pig + fi + "ay"
+elif fi in vowels:
+    word_pig = word_pig + "way"
+print(word_pig)    
     
